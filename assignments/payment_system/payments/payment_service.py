@@ -5,7 +5,7 @@ class PaymentService:
         self.payment_strategy = payment_strategy
         
 
-    def make_payment(self, amount: float) -> None:
+    def make_payment(self, amount: float) -> str:
         if self.payment_strategy.validate_details():
-            self.payment_strategy.pay(amount);
+            return self.payment_strategy.pay(amount);
         

@@ -14,4 +14,4 @@ class CreditCard(PaymentStrategy):
             return False
         
     def pay(self, amount: float) -> None:
-        print(f"Payment of ({amount}) completed!!")
+        return f"Payment of ({amount}) completed!!"

@@ -13,5 +13,5 @@ class DebitCard(PaymentStrategy):
             print(f"Debit Card ({self.pay_details[-5:]}) validation failed!! as length is ({len(self.pay_details)})")
             return False
         
-    def pay(self, amount: float) -> None:
-        print(f"Payment of ({amount}) completed!!")
+    def pay(self, amount: float) -> str:
+        return f"Payment of ({amount}) completed!!"

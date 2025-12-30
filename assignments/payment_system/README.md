@@ -26,3 +26,8 @@ Pythonic OOP, dynamic imports, and extensibility.
 
 ## 📁 Project Structure
 
+
+## Command to run
+- T0 Run module : python -m payments.client
+- To Run module with end point: uvicorn payments.rest_client:fast_api --reload
+    - URL for swagger: http://localhost:8000/docs
